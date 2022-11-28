@@ -1,0 +1,3 @@
+when HTTP_REQUEST {
+if { ([string tolower [HTTP::header "User-Agent"]] contains "python") } { drop }
+}
