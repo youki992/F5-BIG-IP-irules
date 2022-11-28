@@ -1,0 +1,4 @@
+when HTTP_REQUEST {
+if {[HTTP::uri] starts_with "/xxxx"} {
+  HTTP::redirect https://example.com/yyyy
+}}
